@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              almostWhite: "hsl(0, 0%, 95%)",
+              moderateViolet: "hsl(263, 55%, 52%)",
+              lavenderPurple: "hsl(264, 82%, 70%)",
+              veryDarkGrayishBlue: "hsl(217, 19%, 35%)",
+              veryDarkBlackishBlue: "hsl(219, 29%, 14%)",
+              white: "hsl(0, 0%, 100%)",
+              lightGray: "hsl(0, 0%, 81%)",
+              lightGrayishBlue: "hsl(210, 46%, 95%)",
+            },
+            fontFamily: {
+              sans: ["Barlow Semi Condensed", "sans-serif"],
+            },
+            boxShadow: {
+              custom: "40px 60px 50px -47px rgba(72, 85, 106, 0.2474)",
+            },
+            lineHeight: {
+              extratight: "1.2",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Testimonials grid section</title>
+  </head>
+  <body
+    class="min-h-screen bg-almostWhite flex flex-col items-center justify-center font-sans antialiased"
+  >
+    <main
+      class="bg-lightGrayishBlue py-[4.4375rem] px-6 grid grid-cols-1 gap-6 lg:gap-x-[1.875rem] lg:gap-y-6 w-[23.4375rem] lg:grid-cols-4 lg:grid-rows-[1fr 266px] lg:w-[90rem] lg:px-[10.3125rem] lg:py-[10.25rem]"
+    >
+      <div
+        class="bg-moderateViolet rounded-lg pt-[1.625rem] pb-8 px-8 relative shadow-custom lg:col-span-2"
+      >
+        <section class="flex items-center gap-[1.0625rem] mb-[1.125rem]">
+          <img
+            class="rounded-full border-2 border-lavenderPurple w-7 h-7"
+            src="images/image-daniel.jpg"
+            alt="personal photo"
+          />
+          <section class="font-medium text-white flex flex-col gap-y-1">
+            <h2 class="text-[.8125rem] leading-[.8125rem]">Daniel Clifford</h2>
+            <h3 class="text-[.6875rem] leading-[.6875rem] opacity-50">
+              Verified Graduate
+            </h3>
+          </section>
+        </section>
+        <p
+          class="font-semibold text-[1.25rem] leading-extratight text-white mb-10 lg:mb-4 z-10 relative"
+        >
+          I received a job offer mid-course, and the subjects I learned were
+          current, if not more so, in the company I joined. I honestly feel I
+          got every penny’s worth.
+        </p>
+        <img
+          class="absolute top-0 right-[1.5rem] z-0 lg:right-[5rem]"
+          src="images/bg-pattern-quotation.svg"
+          alt="quotation"
+        />
+        <p
+          class="text-lightGray font-medium leading-[1.125rem] text-[.8125rem] opacity-70 pr-4 lg:pr-0"
+        >
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been
+          looking to make a transition and have heard some people who had an
+          amazing experience here. I signed up for the free intro course and
+          found it incredibly fun! I enrolled shortly thereafter. The next 12
+          weeks was the best - and most grueling - time of my life. Since
+          completing the course, I’ve successfully switched careers, working as
+          a Software Engineer at a VR startup. ”
+        </p>
+      </div>
+      <div
+        class="bg-veryDarkGrayishBlue rounded-lg pt-[1.625rem] pb-8 px-8 shadow-custom"
+      >
+        <section class="flex items-center gap-[1.0625rem] mb-[1.125rem]">
+          <img
+            class="rounded-full w-7 h-7"
+            src="images/image-jonathan.jpg"
+            alt="personal photo"
+          />
+          <section class="font-medium text-white flex flex-col gap-y-1">
+            <h2 class="text-[.8125rem] leading-[.8125rem]">Jonathan Walters</h2>
+            <h3 class="text-[.6875rem] leading-[.6875rem] opacity-50">
+              Verified Graduate
+            </h3>
+          </section>
+        </section>
+        <p
+          class="font-semibold text-[1.25rem] leading-extratight text-white mb-4"
+        >
+          The team was very supportive and kept me motivated
+        </p>
+        <p
+          class="text-lightGray font-medium leading-[1.125rem] text-[.8125rem] opacity-70"
+        >
+          “ I started as a total newbie with virtually no coding skills. I now
+          work as a mobile engineer for a big company. This was one of the best
+          investments I’ve made in myself. “
+        </p>
+      </div>
+      <div
+        class="bg-white rounded-lg pt-[1.625rem] pb-8 lg:pb-[1.625rem] px-8 text-veryDarkGrayishBlue shadow-custom lg:col-start-1 lg:row-start-2"
+      >
+        <section class="flex items-center gap-[1.0625rem] mb-[1.125rem]">
+          <img
+            class="rounded-full w-7 h-7"
+            src="images/image-jeanette.jpg"
+            alt="personal photo"
+          />
+          <section class="font-medium flex flex-col gap-y-1">
+            <h2 class="text-[.8125rem] leading-[.8125rem]">Jeanette Harmon</h2>
+            <h3 class="text-[.6875rem] leading-[.6875rem] opacity-50">
+              Verified Graduate
+            </h3>
+          </section>
+        </section>
+        <p class="font-semibold text-[1.25rem] leading-extratight mb-4 lg:mb-6">
+          An overall wonderful and rewarding experience
+        </p>
+        <p class="font-medium leading-[1.125rem] text-[.8125rem] opacity-70">
+          “ Thank you for the wonderful experience! I now have a job I really
+          enjoy, and make a good living while doing something I love. ”
+        </p>
+      </div>
+      <div
+        class="bg-veryDarkBlackishBlue rounded-lg pt-[1.625rem] pb-8 lg:pb-[1.625rem] px-8 text-veryDarkGrayishBlue lg:col-span-2 shadow-custom"
+      >
+        <section class="flex items-center gap-[1.0625rem] mb-4">
+          <img
+            class="rounded-full w-7 h-7 border-2 border-lavenderPurple"
+            src="images/image-patrick.jpg"
+            alt="personal photo"
+          />
+          <section class="text-white font-medium flex flex-col gap-y-1">
+            <h2 class="text-[.8125rem] leading-[.8125rem]">Patrick Abrams</h2>
+            <h3 class="text-[.6875rem] leading-[.6875rem] opacity-50">
+              Verified Graduate
+            </h3>
+          </section>
+        </section>
+        <p
+          class="font-semibold text-[1.25rem] leading-extratight mb-[1.125rem] text-lightGrayishBlue lg:mb-6"
+        >
+          Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was
+          easy.
+        </p>
+        <p
+          class="font-medium leading-[1.125rem] text-[.8125rem] opacity-70 text-white"
+        >
+          “ The staff seem genuinely concerned about my progress which I find
+          really refreshing. The program gave me the confidence necessary to be
+          able to go out in the world and present myself as a capable junior
+          developer. The standard is above the rest. You will get the personal
+          attention you need from an incredible community of smart and amazing
+          people. ”
+        </p>
+      </div>
+      <div
+        class="bg-white rounded-lg pt-[1.625rem] pb-8 lg:pb-[1.625rem] px-8 text-veryDarkGrayishBlue shadow-custom lg:col-start-4 lg:row-start-1 lg:row-span-2"
+      >
+        <section class="flex items-center gap-[1.0625rem] mb-[1.125rem]">
+          <img
+            class="rounded-full w-7 h-7"
+            src="images/image-kira.jpg"
+            alt="personal photo"
+          />
+          <section class="font-medium flex flex-col gap-y-1">
+            <h2 class="text-[.8125rem] leading-[.8125rem]">Kira Whittle</h2>
+            <h3 class="text-[.6875rem] leading-[.6875rem] opacity-50">
+              Verified Graduate
+            </h3>
+          </section>
+        </section>
+        <p class="font-semibold text-[1.25rem] leading-extratight mb-4 lg:mb-6">
+          Such a life-changing experience. Highly recommended!
+        </p>
+        <p class="font-medium leading-[1.125rem] text-[.8125rem] opacity-70">
+          “ Before joining the bootcamp, I’ve never written a line of code. I
+          needed some structure from professionals who can help me learn
+          programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program.
+          The entire curriculum and staff did not disappoint. They were very
+          hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the
+          next level in a way that no tutorial could ever have. In fact, I’ve
+          often referred to it during interviews as an example of my development
+          experience. It certainly helped me land a job as a full-stack
+          developer after receiving multiple offers. 100% recommend! ”
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
